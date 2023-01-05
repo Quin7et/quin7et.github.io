@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Albert &#34;Quin7et&#34; Quinn</title>
-    <link>https://quin7et.github.io/</link>
-    <description>Recent content on Albert &#34;Quin7et&#34; Quinn</description>
+    <title>Posts on Albert &#34;Quin7et&#34; Quinn</title>
+    <link>https://quin7et.github.io/posts/</link>
+    <description>Recent content in Posts on Albert &#34;Quin7et&#34; Quinn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2022 Quin7et</copyright>
-    <lastBuildDate>Wed, 20 Jul 2022 02:36:47 +0800</lastBuildDate><atom:link href="https://quin7et.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jul 2022 02:36:47 +0800</lastBuildDate><atom:link href="https://quin7et.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Things I Learned From the GMTK Game Jam</title>
       <link>https://quin7et.github.io/posts/the-gmtk-gamejam-2022-experience/</link>
@@ -17,16 +17,6 @@
       <description>That&amp;rsquo;s when I realized, I was trying to make an IMPRESSIVE game, rather than a FUN one (which probably says a lot about my insecurities).
 I am NOT known for actually finishing my projects.
 Contrary to popular belief, creativity is NOT a rare talent. It&amp;rsquo;s not even a minority trait. Literally everyone is able to come up with an abundance of ideas, some of which are actually quite practical and executable.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://quin7et.github.io/about/</link>
-      <pubDate>Tue, 07 Jun 2022 00:36:44 +0800</pubDate>
-      
-      <guid>https://quin7et.github.io/about/</guid>
-      <description>I am Quin7et (pronounced &amp;ldquo;quintet&amp;rdquo;), a writer and a game developer.
-I made Campfire for Ludum Dare 50. I translated this Devil Daggers guide by Braden. I have translated a few entries (into Chinese) on the SCP Foundation. I wrote a short fiction published on Science Fiction World when I was 17. You&amp;rsquo;ve probably noticed that I didn&amp;rsquo;t link it. The reason being that I am not proud of it.</description>
     </item>
     
   </channel>
