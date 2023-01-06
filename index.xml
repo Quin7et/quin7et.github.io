@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Albert &#34;Quin7et&#34; Quinn</title>
+    <title>Quin7et&#39;s Personal Website</title>
     <link>https://quin7et.github.io/</link>
-    <description>Recent content on Albert &#34;Quin7et&#34; Quinn</description>
+    <description>Recent content on Quin7et&#39;s Personal Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2022 Quin7et</copyright>
     <lastBuildDate>Wed, 20 Jul 2022 02:36:47 +0800</lastBuildDate><atom:link href="https://quin7et.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Things I Learned From the GMTK Game Jam</title>
