@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<meta name="generator" content="Hugo 0.100.1" /><meta charset="UTF-8">
+	<meta name="generator" content="Hugo 0.124.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
@@ -32,11 +32,9 @@
 <meta property="og:title" content="Quin7et&#39;s Personal Website" />
 <meta property="og:description" content="Text about my cool site" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://quin7et.github.io/" /><meta property="og:site_name" content="Quin7et" />
+<meta property="og:url" content="http://localhost:1313/" /><meta property="og:site_name" content="Quin7et" />
 
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Quin7et&#39;s Personal Website"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Quin7et&#39;s Personal Website"/>
 <meta name="twitter:description" content="Text about my cool site"/>
 
 
@@ -78,19 +76,18 @@
     }
 
     body::-webkit-scrollbar {
-        width: .5em;
-        height: .5em;
+        height: 0px;
+        width: 8px;
         background-color: var(--background-color);
     }
     
     ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px var(--background-color);
         border-radius: 1rem;
     }
     
     ::-webkit-scrollbar-thumb {
         border-radius: 1rem;
-        background-color: var(--secondary-color);
+        background: #b0b0b0;
         outline: 1px solid var(--background-color);
     }
 
@@ -101,12 +98,13 @@
     }
 </style>
 
+
 <meta name="description" content=Text&#32;about&#32;my&#32;cool&#32;site>
 <link rel="stylesheet" href="/css/index.css" media="all">
 <link rel="stylesheet" href="/css/projects.css" media="all">
 
 
-<script defer src="/fontawesome-5/all-5.15.4.js"></script>
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
 
   <title>
 Quin7et&#39;s Personal Website
@@ -114,23 +112,33 @@ Quin7et&#39;s Personal Website
   </title>
 </head>
 
-<body class="light" onload="loading()">
+<body class="light">
   
   
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
 </script>
 
 
 
-<header>
+
+
+<header id="profileHeader">
     <nav class="pt-3 navbar navbar-expand-lg animate">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             
@@ -221,24 +229,25 @@ Quin7et&#39;s Personal Website
                     Hi, my name is:
                 </span>
                 <h2>
-                    Quin7et
+                    Quin &#34;Quin7et&#34; Li
                 </h2>
                 <h3>
-                    An aspiring game/level designer.
+                    A level designer/indie dev.
                 </h3>
                 <p class="hero-content">
-                    Creating video games, science fictions and reviews!
+                    Creating levels, indie games and reviews!
                 </p>
                 <div class="row">
                     <div class="col-auto h-100">
                         
-                        <a href="CV.pdf" class="btn" download
-			  >
-                            Resume
-                        </a>
-                        
                     </div>
-                    <div class="col-auto px-0 h-100"><span id="loading-icons" style="display: none;">
+                    <div class="col-auto px-0 h-100"><span>
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/quin-li-988a93289/" target="_blank" class="btn social-icon">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </span>
     
     <span class="px-1">
         <a href="https://quin7et.itch.io" target="_blank" class="btn social-icon">
@@ -260,8 +269,8 @@ Quin7et&#39;s Personal Website
             <div class="col-sm-12 col-md-12 col-lg-4">
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
-                        <img src="" 
-                            class="img-thumbnail mx-auto" 
+                        <img src=""
+                            class="img-thumbnail mx-auto"
                             alt=""
                         >
                     </div>
@@ -269,6 +278,7 @@ Quin7et&#39;s Personal Website
             </div>
         </div>
     </div>
+    
     <div class="hero-bottom-svg d-md-block d-lg-block d-none">
         <svg xmlns="http://www.w3.org/2000/svg" width="201" height="201" viewBox="0 0 201 201">
             <g id="Group_1168" data-name="Group 1168" transform="translate(-384 -1392)">
@@ -531,6 +541,7 @@ Quin7et&#39;s Personal Website
             </g>
         </svg>
     </div>
+    
 </section>
 
 <section id="about" class="py-0 py-sm-5">
@@ -545,22 +556,22 @@ Quin7et&#39;s Personal Website
             </div>
             
             <div class="col-sm-12 col-md-12 col-lg-8 content">
-                <p>I am Quin7et (pronounced &ldquo;quintet&rdquo;), game/level designer and writer.</p>
+                <p>I am Quin Li (Quin7et), level designer/tech designer/indie dev.</p>
 <p>I made <a href="https://quin7et.itch.io/campfire"><em>Campfire</em></a> for Ludum Dare 50. I translated <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2464222205">this</a> Devil Daggers guide by <a href="https://steamcommunity.com/id/bradenbest">Braden</a>. I have translated a few entries (into Chinese) on the SCP Foundation. I wrote a short fiction published on Science Fiction World when I was 17.</p>
 <p>I enjoy science fictions that don&rsquo;t involve space (or at least don&rsquo;t make a big deal of it). I use C# for most of my projects. My favorite musician is Shostakovich. I find it terrifying that Cyberpunk is still relevant today after 40 years.</p>
 
 
                 
-                My recent favorite games: (↑AAA ↓Indie)
+                My recent favorite games:
                 <ul>
                     
-                    <li><em>Dishonored 2</em></li>
+                    <li><em>Ctrl Alt Ego</em></li>
                     
-                    <li><em>Metro Exodus</em></li>
+                    <li><em>Prey</em></li>
+                    
+                    <li><em>Window Kill</em></li>
                     
                     <li><em>Quadrilateral Cowboy</em></li>
-                    
-                    <li><em>ULTRAKILL</em></li>
                     
                 </ul>
                 
@@ -575,7 +586,7 @@ Quin7et&#39;s Personal Website
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-8 col-lg-8 py-5">
                 <div class="experience-container px-3 pt-2">
-                    <ul class="nav nav-pills mb-3 bg-transparent" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab" role="tablist">
                         
                         
                         <li class="nav-item px-1 bg-transparent" role="presentation">
@@ -584,9 +595,25 @@ Quin7et&#39;s Personal Website
                                 aria-selected="true" 
                                 role="tab" 
                                 data-bs-toggle="pill"
+                                id='Overgrown-Studio-Dec-2023---Now-tab'
+                                data-bs-target='#pills-Overgrown-Studio-Dec-2023---Now'
+                                aria-controls='Overgrown-Studio-Dec-2023---Now' 
+                            >
+                                Overgrown Studio
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
                                 id='Tencent-Oct-2020---Jan-2021-tab'
-                                data-bs-target='#pills-Tencent-Oct-2020---Jan-2021'
-                                aria-controls='Tencent-Oct-2020---Jan-2021' 
+                                data-bs-target='#pills-Tencent-Oct-2020---Jan-2021' 
+                                aria-controls='Tencent-Oct-2020---Jan-2021'
                             >
                                 Tencent
                             </div>
@@ -632,22 +659,22 @@ Quin7et&#39;s Personal Website
                         <div 
                             class="tab-pane fade show active bg-transparent" 
                             role="tabpanel"
-                            id='pills-Tencent-Oct-2020---Jan-2021'
-                            aria-labelledby='pills-Tencent-Oct-2020---Jan-2021-tab'
+                            id='pills-Overgrown-Studio-Dec-2023---Now'
+                            aria-labelledby='pills-Overgrown-Studio-Dec-2023---Now-tab'
                         >
                             <div>
-                                <span class="h4">Narrative Designer &amp; Writer Intern</span>
+                                <span class="h4">Level Design Lead</span>
                                 <small>-</small>
-                                <a href="https://game.qq.com" target="_blank">Tencent</a>
+                                <a href="https://www.linkedin.com/company/overgrown-studios/" target="_blank">Overgrown Studio</a>
                                 <div class="pb-1">
-                                    <small>Oct 2020 - Jan 2021</small>
+                                    <small>Dec 2023 - Now</small>
                                     
                                     <span class="p-2">
                                         <span 
                                             style="cursor: pointer;" 
                                             data-bs-toggle="tooltip" 
                                             data-bs-placement="top" 
-                                            data-bs-original-title=Working&#32;as&#32;a&#32;Narrative&#32;Designer&#32;&amp;&#32;Writer&#32;Intern&#32;at&#32;Tencent
+                                            data-bs-original-title=Working&#32;as&#32;a&#32;Level&#32;Design&#32;Lead&#32;at&#32;Overgrown&#32;Studio
                                         >
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
@@ -658,12 +685,53 @@ Quin7et&#39;s Personal Website
                                 
                             </div>
 
-                            <p>I worked as a game writer intern at Tencent in Shenzhen. I worked on the main questline of a released mobile game and IP building for another.</p>
+                            <p>I&rsquo;m currently working as level design lead for our capstone game, <em>Caesura</em>.</p>
+<ul>
+<li>Making executive decisions on the overall layout of the levels.</li>
+<li>Coordinate our level design team, overall quality control.</li>
+<li>Interdicipline communication between environmental art and programming.</li>
+</ul>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Tencent-Oct-2020---Jan-2021'
+                            aria-labelledby='pills-Tencent-Oct-2020---Jan-2021-tab'
+                        >
+                            <div>
+                                <span class="h4">Narrative Designer &amp; Writer</span>
+                                <small>-</small>
+                                <a href="https://game.qq.com" target="_blank">Tencent</a>
+                                
+                                <div class="pb-1">
+                                    <small>Oct 2020 - Jan 2021</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Worked&#32;as&#32;a&#32;Narrative&#32;Designer&#32;&amp;&#32;Writer&#32;at&#32;Tencent
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>I worked as a game writer at Tencent in Shenzhen. I worked on the main questline of a released mobile game and IP building for another.</p>
 <ul>
 <li>Wrote and script main questline quests for <a href="https://zyhx.qq.com/main.html"><em>Free Fantasy Online Mobile</em></a>.</li>
 <li>Worked on IP building for <a href="https://gp.qq.com/"><em>Game of Peace</em></a>.</li>
 </ul>
-
+                            </div>
                         </div>
                         
                         
@@ -742,7 +810,6 @@ Quin7et&#39;s Personal Website
 <li>Fully localized <a href="https://store.steampowered.com/app/1503790/Nordicandia/"><em>Nordicandia</em></a> released on steam with over 20000 words of text.</li>
 <li>Fully localized <a href="https://www.youtube.com/watch?v=TBGYJMY5s4Q"><em>Super Snipp</em></a>.</li>
 </ul>
-
                             </div>
                         </div>
                         
@@ -754,11 +821,44 @@ Quin7et&#39;s Personal Website
     </div>
 </section>
 
+
 <section id="education" class="py-5">
     <div class="container">
         <h3 class="text-center">Education</h3>
         <div class="row justify-content-center py-5">
             
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2023 - Now</small>
+                                </div>
+                                <h5 class="card-title">Interactive Entertainment M.S. (Level Design Track)</h5>
+                                
+                                
+                                <a href="https://fiea.ucf.edu" target="_blank">
+                                    <h6>
+                                    Florida Interactive Entertainment Academy
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1 education-content">
+                                    
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
             <div class="col-12 p-0">
                 <div class="row row align-items-center justify-content-center m-1 mb-4">
@@ -803,9 +903,9 @@ Quin7et&#39;s Personal Website
         <div class="row justify-content-center px-3 px-md-5">
             
             <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100" title="Cloak">
+                <div class="card my-3 h-100" title="Vitalis District">
                     <div class="card-head">
-                        <img class="card-img-top" src="/images/projects/profile.png" alt="Cloak">
+                        <img class="card-img-top" src="/images/projects/profile.png" alt="Vitalis District">
                     </div>
                     <div class="card-body bg-transparent p-3">
                         <div class="pb-2 bg-transparent">
@@ -817,9 +917,9 @@ Quin7et&#39;s Personal Website
                             <span class="badge badge-secondary">Stealth</span>
                             
                         </div>
-                        <h5 class="card-title bg-transparent mt-1">Cloak</h5>
+                        <h5 class="card-title bg-transparent mt-1">Vitalis District</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            First person stealth &amp; narrative game
+                            Dishonored 2 Inspired Level (wip)
                         </div>
                     </div>
                     
@@ -853,7 +953,13 @@ Quin7et&#39;s Personal Website
                     </div>
                     
                     <div class="text-center pt-3">
-                        <a href="mailto:quin7et@gmail.com" class="btn">
+                        <a 
+                            href='
+                                    mailto:quin7et@gmail.com
+                                  '
+                            target="_blank"
+                            class="btn"
+                        >
                             Mail me
                         </a>
                     </div>
@@ -862,18 +968,51 @@ Quin7et&#39;s Personal Website
             </div>
         </div>
     </div>
+    <div id="contact-form-status"></div>
 </section>
 
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>
+
   </div><footer>
-    <div class="container py-3" id="recent-posts">
     
-    
+ 
+ 
+<div class="container py-3" id="recent-posts">
     
     
     <div class="h3 text-center text-secondary py-3">
         Recent Posts
     </div>
     <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/posts/vitalis-district-devlog/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Vitalis District Devlog">Vitalis District Devlog</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Vitalis District One level I&rsquo;ve always loved in Dishonored 1 is the Flooded District. It is quite a cliche to take away the player&rsquo;s arsonal towards the 3rd act of the game, but it is equally effective and facinating to me, which is why I&rsquo;m saddened such moment was never present in …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">March 1, 2024</span>
+                    <a href="/posts/vitalis-district-devlog/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
         
         <div class="col-lg-4 col-md-6 pt-2">
             <div class="card h-100">
@@ -914,8 +1053,9 @@ Contrary to popular belief, creativity is NOT a rare talent. It&rsquo;s not even
         </div>
         
     </div>
-    
-</div><div class="text-center pt-2">
+</div>
+
+<div class="text-center pt-2">
     
 
     
@@ -929,13 +1069,23 @@ Contrary to popular belief, creativity is NOT a rare talent. It&rsquo;s not even
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
             <div class="pb-2">
-                <a href="https://quin7et.github.io/" title="Quin7et&#39;s Personal Website">
+                <a href="http://localhost:1313/" title="Quin7et&#39;s Personal Website">
                     <img alt="Footer logo" src="/images/favicon.ico"
                         height="40px" width="40px">
                 </a>
             </div>
-            &copy; Quin7et 2023  All Rights Reserved
-            
+            &copy; 2024  All Rights Reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
         </div>
     </div>
 </div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
@@ -944,7 +1094,7 @@ Contrary to popular belief, creativity is NOT a rare talent. It&rsquo;s not even
         document.body.classList.add('dark');
     } else if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -967,19 +1117,9 @@ Contrary to popular belief, creativity is NOT a rare talent. It&rsquo;s not even
 
 </script>
 
-<script>
-    let loadingIcons;
 
-    function loading() {
-        myVar = setTimeout(showPage, 100);
-    }
 
-    function showPage() {
-        try{
-            document.getElementById("loading-icons").style.display = "block";
-        } catch(err) {}
-    }
-</script>
+
 
 
 

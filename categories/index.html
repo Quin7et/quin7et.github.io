@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head><meta charset="UTF-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
@@ -31,11 +31,9 @@
 <meta property="og:title" content="Categories" />
 <meta property="og:description" content="Text about my cool site" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://quin7et.github.io/categories/" /><meta property="og:site_name" content="Quin7et" />
+<meta property="og:url" content="http://localhost:1313/categories/" /><meta property="og:site_name" content="Quin7et" />
 
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Categories"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Categories"/>
 <meta name="twitter:description" content="Text about my cool site"/>
 
 
@@ -77,19 +75,18 @@
     }
 
     body::-webkit-scrollbar {
-        width: .5em;
-        height: .5em;
+        height: 0px;
+        width: 8px;
         background-color: var(--background-color);
     }
     
     ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px var(--background-color);
         border-radius: 1rem;
     }
     
     ::-webkit-scrollbar-thumb {
         border-radius: 1rem;
-        background-color: var(--secondary-color);
+        background: #b0b0b0;
         outline: 1px solid var(--background-color);
     }
 
@@ -100,6 +97,7 @@
     }
 </style>
 
+
 <meta name="description" content="Categories of Quin7et&#39;s Personal Website">
 <link rel="stylesheet" href="/css/list.css" media="all">
 
@@ -109,23 +107,33 @@ Categories | Quin7et&#39;s Personal Website
   </title>
 </head>
 
-<body class="light" onload="loading()">
+<body class="light">
   
   
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
 </script>
 
 
 
-<header>
+
+
+<header id="profileHeader">
     <nav class="pt-3 navbar navbar-expand-lg animate">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             
@@ -221,15 +229,34 @@ Categories | Quin7et&#39;s Personal Website
 </div>
 
   </div><footer>
-    <div class="container py-3" id="recent-posts">
     
-    
+ 
+ 
+<div class="container py-3" id="recent-posts">
     
     
     <div class="h3 text-center text-secondary py-3">
         Recent Posts
     </div>
     <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/posts/vitalis-district-devlog/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Vitalis District Devlog">Vitalis District Devlog</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">March 1, 2024</span>
+                    <a href="/posts/vitalis-district-devlog/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
         
         <div class="col-lg-4 col-md-6 pt-2">
             <div class="card h-100">
@@ -270,8 +297,9 @@ Contrary to popular belief, creativity is NOT a rare talent. It&rsquo;s not even
         </div>
         
     </div>
-    
-</div><div class="text-center pt-2">
+</div>
+
+<div class="text-center pt-2">
     
 
     
@@ -285,13 +313,23 @@ Contrary to popular belief, creativity is NOT a rare talent. It&rsquo;s not even
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
             <div class="pb-2">
-                <a href="https://quin7et.github.io/" title="Quin7et&#39;s Personal Website">
+                <a href="http://localhost:1313/" title="Quin7et&#39;s Personal Website">
                     <img alt="Footer logo" src="/images/favicon.ico"
                         height="40px" width="40px">
                 </a>
             </div>
-            &copy; Quin7et 2023  All Rights Reserved
-            
+            &copy; 2024  All Rights Reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
         </div>
     </div>
 </div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
@@ -300,7 +338,7 @@ Contrary to popular belief, creativity is NOT a rare talent. It&rsquo;s not even
         document.body.classList.add('dark');
     } else if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -323,19 +361,9 @@ Contrary to popular belief, creativity is NOT a rare talent. It&rsquo;s not even
 
 </script>
 
-<script>
-    let loadingIcons;
 
-    function loading() {
-        myVar = setTimeout(showPage, 100);
-    }
 
-    function showPage() {
-        try{
-            document.getElementById("loading-icons").style.display = "block";
-        } catch(err) {}
-    }
-</script>
+
 
 
 

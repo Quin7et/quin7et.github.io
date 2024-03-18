@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog on Albert &#34;Quin7et&#34; Quinn</title>
-    <link>https://quin7et.github.io/tags/blog/</link>
-    <description>Recent content in blog on Albert &#34;Quin7et&#34; Quinn</description>
+    <title>Blog on Quin7et&#39;s Personal Website</title>
+    <link>http://localhost:1313/tags/blog/</link>
+    <description>Recent content in Blog on Quin7et&#39;s Personal Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2022 Quin7et</copyright>
-    <lastBuildDate>Mon, 06 Jun 2022 23:29:10 +0800</lastBuildDate><atom:link href="https://quin7et.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Jun 2022 23:29:10 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How To Learn Anything (Probably)</title>
-      <link>https://quin7et.github.io/posts/how-to-learn-anything-probably/</link>
+      <link>http://localhost:1313/posts/how-to-learn-anything-probably/</link>
       <pubDate>Mon, 06 Jun 2022 23:29:10 +0800</pubDate>
-      
-      <guid>https://quin7et.github.io/posts/how-to-learn-anything-probably/</guid>
+      <guid>http://localhost:1313/posts/how-to-learn-anything-probably/</guid>
       <description>Disclaimer: I am in no way a psychiatrist or an expert at cognitive science. All of the following content are my personal methodologies + things I&amp;rsquo;ve learned from my closest friends (and they are all REALLY good learners!). I am also not the fastest nor the best learner; but what I AM good at is explaining things to dummies like myself. So if you want something easy to read and potentially quite helpful, continue reading!</description>
     </item>
-    
   </channel>
 </rss>

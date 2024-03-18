@@ -2,40 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Quin7et&#39;s Personal Website</title>
-    <link>https://quin7et.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Quin7et&#39;s Personal Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Nov 2022 03:09:10 +0800</lastBuildDate><atom:link href="https://quin7et.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Mar 2024 04:28:56 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vitalis District Devlog</title>
+      <link>http://localhost:1313/posts/vitalis-district-devlog/</link>
+      <pubDate>Fri, 01 Mar 2024 04:28:56 -0400</pubDate>
+      <guid>http://localhost:1313/posts/vitalis-district-devlog/</guid>
+      <description>Vitalis District One level I&amp;rsquo;ve always loved in Dishonored 1 is the Flooded District. It is quite a cliche to take away the player&amp;rsquo;s arsonal towards the 3rd act of the game, but it is equally effective and facinating to me, which is why I&amp;rsquo;m saddened such moment was never present in Dishonored 2 (Well, maybe A Crack In the Slab, but the time piece is arguably a better power).</description>
+    </item>
     <item>
       <title>Virginia: Perfect In form, Lost In Spirit</title>
-      <link>https://quin7et.github.io/posts/virginia/</link>
+      <link>http://localhost:1313/posts/virginia/</link>
       <pubDate>Tue, 15 Nov 2022 03:09:10 +0800</pubDate>
-      
-      <guid>https://quin7et.github.io/posts/virginia/</guid>
+      <guid>http://localhost:1313/posts/virginia/</guid>
       <description>Preamble Eurogamer&amp;rsquo;s review of Thirty Flights of Loving states: &amp;ldquo;This is a game that packs more narrative punch into its first startling jump-cut than most can muster across an entire campaign.&amp;rdquo; Virginia, unfortunately, falls into the latter. Despite its effort to become Thirty Flight&amp;rsquo;s &amp;ldquo;full-length successor,&amp;rdquo; an overt ending credit tribute would not save Virginia from being a drawn-out, vapid hollow of its predecessor. Because of Virginia&amp;rsquo;s self-identification as an interactive movie rather than a game, it naturally fails to live up to Thirty Flight&amp;rsquo;s name - to push beyond the boundary of video game narrative techniques.</description>
     </item>
-    
     <item>
       <title>Things I Learned From the GMTK Game Jam</title>
-      <link>https://quin7et.github.io/posts/the-gmtk-gamejam-2022-experience/</link>
+      <link>http://localhost:1313/posts/the-gmtk-gamejam-2022-experience/</link>
       <pubDate>Wed, 20 Jul 2022 02:36:47 +0800</pubDate>
-      
-      <guid>https://quin7et.github.io/posts/the-gmtk-gamejam-2022-experience/</guid>
-      <description>That&amp;rsquo;s when I realized, I was trying to make an IMPRESSIVE game, rather than a FUN one (which probably says a lot about my insecurities).
-I am NOT known for actually finishing my projects.
-Contrary to popular belief, creativity is NOT a rare talent. It&amp;rsquo;s not even a minority trait. Literally everyone is able to come up with an abundance of ideas, some of which are actually quite practical and executable.</description>
+      <guid>http://localhost:1313/posts/the-gmtk-gamejam-2022-experience/</guid>
+      <description>That&amp;rsquo;s when I realized, I was trying to make an IMPRESSIVE game, rather than a FUN one (which probably says a lot about my insecurities).&#xA;I am NOT known for actually finishing my projects.&#xA;Contrary to popular belief, creativity is NOT a rare talent. It&amp;rsquo;s not even a minority trait. Literally everyone is able to come up with an abundance of ideas, some of which are actually quite practical and executable.</description>
     </item>
-    
     <item>
       <title>About</title>
-      <link>https://quin7et.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Tue, 07 Jun 2022 00:36:44 +0800</pubDate>
-      
-      <guid>https://quin7et.github.io/about/</guid>
-      <description>I am Quin7et (pronounced &amp;ldquo;quintet&amp;rdquo;), a writer and a game developer.
-I made Campfire for Ludum Dare 50. I translated this Devil Daggers guide by Braden. I have translated a few entries (into Chinese) on the SCP Foundation. I wrote a short fiction published on Science Fiction World when I was 17. You&amp;rsquo;ve probably noticed that I didn&amp;rsquo;t link it. The reason being that I am not proud of it.</description>
+      <guid>http://localhost:1313/about/</guid>
+      <description>I am Quin &amp;ldquo;Quin7et&amp;rdquo; Li, a level designer/indie dev.&#xA;I made Campfire for Ludum Dare 50. I translated this Devil Daggers guide by Braden. I have translated a few entries (into Chinese) on the SCP Foundation. I wrote a short fiction published on Science Fiction World when I was 17. You&amp;rsquo;ve probably noticed that I didn&amp;rsquo;t link it. The reason being that I am not proud of it.&#xA;I enjoy science fictions that don&amp;rsquo;t involve space (or at least don&amp;rsquo;t make a big deal of it).</description>
     </item>
-    
+    <item>
+      <title>How To Learn Anything (Probably)</title>
+      <link>http://localhost:1313/posts/how-to-learn-anything-probably/</link>
+      <pubDate>Mon, 06 Jun 2022 23:29:10 +0800</pubDate>
+      <guid>http://localhost:1313/posts/how-to-learn-anything-probably/</guid>
+      <description>Disclaimer: I am in no way a psychiatrist or an expert at cognitive science. All of the following content are my personal methodologies + things I&amp;rsquo;ve learned from my closest friends (and they are all REALLY good learners!). I am also not the fastest nor the best learner; but what I AM good at is explaining things to dummies like myself. So if you want something easy to read and potentially quite helpful, continue reading!</description>
+    </item>
   </channel>
 </rss>

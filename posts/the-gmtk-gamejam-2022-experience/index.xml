@@ -2,10 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Things I Learned From the GMTK Game Jam on Quin7et&#39;s Personal Website</title>
-    <link>https://quin7et.github.io/posts/the-gmtk-gamejam-2022-experience/</link>
+    <link>http://localhost:1313/posts/the-gmtk-gamejam-2022-experience/</link>
     <description>Recent content in Things I Learned From the GMTK Game Jam on Quin7et&#39;s Personal Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Jul 2022 02:36:47 +0800</lastBuildDate><atom:link href="https://quin7et.github.io/posts/the-gmtk-gamejam-2022-experience/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/the-gmtk-gamejam-2022-experience/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
